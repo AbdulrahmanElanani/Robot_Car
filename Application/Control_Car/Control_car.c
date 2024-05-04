@@ -33,7 +33,7 @@ void APP_Control_Car_App(void) {
 	HAL_LED_u8LedMode(PortA, Pin0, LED_ON);
 	while (1) {
 		MCAL_UART_UARTReceive(&Loc_u8Event);
-		if (Loc_u8Event == 'F') {
+		if (Loc_u8Event == 'n') {
 			HAL_LED_u8LedMode(PortA,Pin0,LED_ON);
 			HAL_LED_u8LedMode(PortA,Pin1,LED_OFF);
 			Loc_u8state = 1;
