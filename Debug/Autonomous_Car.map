@@ -185,7 +185,7 @@ LOAD d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x6dd0
+.text           0x00000000     0x6efe
  *(.vectors)
  .vectors       0x00000000       0x54 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -571,42 +571,42 @@ LOAD d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  .text.HAL_Buzzer_u8BuzzerMode
                 0x00005126       0x70 ./HAL/Buzzer/Buzzer.o
                 0x00005126                HAL_Buzzer_u8BuzzerMode
- .text.Control_Car_Init
+ .text.APP_Control_Car_Init
                 0x00005196       0x3a ./Application/Control_Car/Control_car.o
-                0x00005196                Control_Car_Init
- .text.Control_Car_App
-                0x000051d0      0x6f2 ./Application/Control_Car/Control_car.o
-                0x000051d0                Control_Car_App
+                0x00005196                APP_Control_Car_Init
+ .text.APP_Control_Car_App
+                0x000051d0      0x83a ./Application/Control_Car/Control_car.o
+                0x000051d0                APP_Control_Car_App
  .text.APP_Autonomous_Car_voidInit
-                0x000058c2       0x2e ./Application/Autonomous_Car/Autonomous_Car.o
-                0x000058c2                APP_Autonomous_Car_voidInit
+                0x00005a0a       0x2e ./Application/Autonomous_Car/Autonomous_Car.o
+                0x00005a0a                APP_Autonomous_Car_voidInit
  .text.APP_Autonomous_Car_voidApp
-                0x000058f0     0x136a ./Application/Autonomous_Car/Autonomous_Car.o
-                0x000058f0                APP_Autonomous_Car_voidApp
- .text.main     0x00006c5a       0x36 ./Application/main.o
-                0x00006c5a                main
- .text.libgcc   0x00006c90       0x44 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x00006c90                __udivmodsi4
- .text.libgcc   0x00006cd4        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00006cd4        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00006cd4        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00006cd4       0x38 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00006cd4                __prologue_saves__
- .text.libgcc   0x00006d0c       0x36 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00006d0c                __epilogue_restores__
+                0x00005a38     0x136a ./Application/Autonomous_Car/Autonomous_Car.o
+                0x00005a38                APP_Autonomous_Car_voidApp
+ .text.main     0x00006da2       0x1c ./Application/main.o
+                0x00006da2                main
+ .text.libgcc   0x00006dbe       0x44 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00006dbe                __udivmodsi4
+ .text.libgcc   0x00006e02        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00006e02        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00006e02        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00006e02       0x38 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00006e02                __prologue_saves__
+ .text.libgcc   0x00006e3a       0x36 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00006e3a                __epilogue_restores__
  .text.avr-libc
-                0x00006d42       0x42 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
-                0x00006d42                itoa
+                0x00006e70       0x42 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+                0x00006e70                itoa
  .text.avr-libc
-                0x00006d84       0x20 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
-                0x00006d84                strrev
- .text.libgcc   0x00006da4       0x28 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x00006da4                __udivmodhi4
-                0x00006dcc                . = ALIGN (0x2)
+                0x00006eb2       0x20 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00006eb2                strrev
+ .text.libgcc   0x00006ed2       0x28 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00006ed2                __udivmodhi4
+                0x00006efa                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00006dcc        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00006dcc                exit
-                0x00006dcc                _exit
+ .fini9         0x00006efa        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00006efa                exit
+                0x00006efa                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -625,11 +625,11 @@ LOAD d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00006dcc        0x4 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00006efa        0x4 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00006dd0                _etext = .
+                0x00006efe                _etext = .
 
-.data           0x00800060      0x1b6 load address 0x00006dd0
+.data           0x00800060      0x1c0 load address 0x00006efe
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -645,149 +645,149 @@ LOAD d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
  .data          0x00800060        0x0 ./HAL/IR_Sensor/IR_Sensor.o
  .data          0x00800060        0x0 ./HAL/H_Bridge/H_Bridge.o
  .data          0x00800060        0x0 ./HAL/Buzzer/Buzzer.o
- .data          0x00800060       0x49 ./Application/Control_Car/Control_car.o
- .data          0x008000a9       0x63 ./Application/Autonomous_Car/Autonomous_Car.o
- .data          0x0080010c        0x0 ./Application/main.o
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
- .data          0x0080010c        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .data          0x0080010c        0x8 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
-                0x0080010c                __thenan_sf
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .data          0x00800114        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .data          0x00800114      0x100 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
-                0x00800114                __clz_tab
- .data          0x00800214        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
- .data          0x00800214        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
- .data          0x00800214        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800060       0x53 ./Application/Control_Car/Control_car.o
+ .data          0x008000b3       0x63 ./Application/Autonomous_Car/Autonomous_Car.o
+ .data          0x00800116        0x0 ./Application/main.o
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .data          0x00800116        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x00800116        0x8 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x00800116                __thenan_sf
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x0080011e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x0080011e      0x100 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                0x0080011e                __clz_tab
+ .data          0x0080021e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .data          0x0080021e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+ .data          0x0080021e        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
  *(.data*)
  .data.Glob_u8Counter
-                0x00800214        0x1 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
-                0x00800214                Glob_u8Counter
+                0x0080021e        0x1 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+                0x0080021e                Glob_u8Counter
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x00800216                . = ALIGN (0x2)
- *fill*         0x00800215        0x1 00
-                0x00800216                _edata = .
-                0x00800216                PROVIDE (__data_end, .)
+                0x00800220                . = ALIGN (0x2)
+ *fill*         0x0080021f        0x1 00
+                0x00800220                _edata = .
+                0x00800220                PROVIDE (__data_end, .)
 
-.bss            0x00800216       0x28
-                0x00800216                PROVIDE (__bss_start, .)
+.bss            0x00800220       0x28
+                0x00800220                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .bss           0x00800216        0x0 ./MCAL/UART/UART.o
- .bss           0x00800216        0x0 ./MCAL/Timer 1/Timer1.o
- .bss           0x00800216        0x0 ./MCAL/Timer 0/Timer_0.o
- .bss           0x00800216        0x0 ./MCAL/Interrupt/Interrupt.o
- .bss           0x00800216        0x0 ./MCAL/DIO/DIO.o
- .bss           0x00800216        0x0 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
- .bss           0x00800216        0x0 ./HAL/Servo Motor/Servo_Motor.o
- .bss           0x00800216        0x0 ./HAL/LED/LED.o
- .bss           0x00800216        0x0 ./HAL/LCD/LCD.o
- .bss           0x00800216        0x0 ./HAL/IR_Sensor/IR_Sensor.o
- .bss           0x00800216        0x0 ./HAL/H_Bridge/H_Bridge.o
- .bss           0x00800216        0x0 ./HAL/Buzzer/Buzzer.o
- .bss           0x00800216        0x0 ./Application/Control_Car/Control_car.o
- .bss           0x00800216        0x0 ./Application/Autonomous_Car/Autonomous_Car.o
- .bss           0x00800216        0x0 ./Application/main.o
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
- .bss           0x00800216        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800220        0x0 ./MCAL/UART/UART.o
+ .bss           0x00800220        0x0 ./MCAL/Timer 1/Timer1.o
+ .bss           0x00800220        0x0 ./MCAL/Timer 0/Timer_0.o
+ .bss           0x00800220        0x0 ./MCAL/Interrupt/Interrupt.o
+ .bss           0x00800220        0x0 ./MCAL/DIO/DIO.o
+ .bss           0x00800220        0x0 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+ .bss           0x00800220        0x0 ./HAL/Servo Motor/Servo_Motor.o
+ .bss           0x00800220        0x0 ./HAL/LED/LED.o
+ .bss           0x00800220        0x0 ./HAL/LCD/LCD.o
+ .bss           0x00800220        0x0 ./HAL/IR_Sensor/IR_Sensor.o
+ .bss           0x00800220        0x0 ./HAL/H_Bridge/H_Bridge.o
+ .bss           0x00800220        0x0 ./HAL/Buzzer/Buzzer.o
+ .bss           0x00800220        0x0 ./Application/Control_Car/Control_car.o
+ .bss           0x00800220        0x0 ./Application/Autonomous_Car/Autonomous_Car.o
+ .bss           0x00800220        0x0 ./Application/main.o
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_le_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strrev.o)
+ .bss           0x00800220        0x0 d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
  *(.bss*)
- .bss.Gptr_3    0x00800216        0x2 ./MCAL/Timer 1/Timer1.o
-                0x00800216                Gptr_3
+ .bss.Gptr_3    0x00800220        0x2 ./MCAL/Timer 1/Timer1.o
+                0x00800220                Gptr_3
  .bss.Glob_u16OvfCounter
-                0x00800218        0x2 ./MCAL/Timer 0/Timer_0.o
-                0x00800218                Glob_u16OvfCounter
- .bss.Gptr3     0x0080021a        0x2 ./MCAL/Timer 0/Timer_0.o
-                0x0080021a                Gptr3
- .bss.Start     0x0080021c        0x2 ./MCAL/Timer 0/Timer_0.o
-                0x0080021c                Start
- .bss.Counter   0x0080021e        0x2 ./MCAL/Timer 0/Timer_0.o
-                0x0080021e                Counter
- .bss.Gptr0     0x00800220        0x2 ./MCAL/Interrupt/Interrupt.o
-                0x00800220                Gptr0
- .bss.Gptr1     0x00800222        0x2 ./MCAL/Interrupt/Interrupt.o
-                0x00800222                Gptr1
- .bss.Gptr2     0x00800224        0x2 ./MCAL/Interrupt/Interrupt.o
-                0x00800224                Gptr2
+                0x00800222        0x2 ./MCAL/Timer 0/Timer_0.o
+                0x00800222                Glob_u16OvfCounter
+ .bss.Gptr3     0x00800224        0x2 ./MCAL/Timer 0/Timer_0.o
+                0x00800224                Gptr3
+ .bss.Start     0x00800226        0x2 ./MCAL/Timer 0/Timer_0.o
+                0x00800226                Start
+ .bss.Counter   0x00800228        0x2 ./MCAL/Timer 0/Timer_0.o
+                0x00800228                Counter
+ .bss.Gptr0     0x0080022a        0x2 ./MCAL/Interrupt/Interrupt.o
+                0x0080022a                Gptr0
+ .bss.Gptr1     0x0080022c        0x2 ./MCAL/Interrupt/Interrupt.o
+                0x0080022c                Gptr1
+ .bss.Gptr2     0x0080022e        0x2 ./MCAL/Interrupt/Interrupt.o
+                0x0080022e                Gptr2
  .bss.Glob_f32Distance
-                0x00800226        0x4 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
-                0x00800226                Glob_f32Distance
+                0x00800230        0x4 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+                0x00800230                Glob_f32Distance
  .bss.Glob_u16StartTime
-                0x0080022a        0x2 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
-                0x0080022a                Glob_u16StartTime
+                0x00800234        0x2 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+                0x00800234                Glob_u16StartTime
  .bss.Glob_u16EndTime
-                0x0080022c        0x2 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
-                0x0080022c                Glob_u16EndTime
+                0x00800236        0x2 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+                0x00800236                Glob_u16EndTime
  .bss.Glob_u16TimeDiff
-                0x0080022e        0x2 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
-                0x0080022e                Glob_u16TimeDiff
+                0x00800238        0x2 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+                0x00800238                Glob_u16TimeDiff
  .bss.Glob_u16DirLeft
-                0x00800230        0x2 ./Application/Autonomous_Car/Autonomous_Car.o
-                0x00800230                Glob_u16DirLeft
+                0x0080023a        0x2 ./Application/Autonomous_Car/Autonomous_Car.o
+                0x0080023a                Glob_u16DirLeft
  .bss.Glob_u16DirRight
-                0x00800232        0x2 ./Application/Autonomous_Car/Autonomous_Car.o
-                0x00800232                Glob_u16DirRight
+                0x0080023c        0x2 ./Application/Autonomous_Car/Autonomous_Car.o
+                0x0080023c                Glob_u16DirRight
  .bss.Glob_u16DirFront
-                0x00800234        0x2 ./Application/Autonomous_Car/Autonomous_Car.o
-                0x00800234                Glob_u16DirFront
+                0x0080023e        0x2 ./Application/Autonomous_Car/Autonomous_Car.o
+                0x0080023e                Glob_u16DirFront
  *(COMMON)
- COMMON         0x00800236        0x4 ./MCAL/Timer 0/Timer_0.o
-                0x00800236                Glob_TickTime
- COMMON         0x0080023a        0x4 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
-                0x0080023a                Glob_16OvfCounterEnd
-                0x0080023c                Glob_u16OvfCounterStart
-                0x0080023e                PROVIDE (__bss_end, .)
-                0x00006dd0                __data_load_start = LOADADDR (.data)
-                0x00006f86                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800240        0x4 ./MCAL/Timer 0/Timer_0.o
+                0x00800240                Glob_TickTime
+ COMMON         0x00800244        0x4 ./HAL/Ultrasonic Sensor/Ultrasonic_Sensor.o
+                0x00800244                Glob_16OvfCounterEnd
+                0x00800246                Glob_u16OvfCounterStart
+                0x00800248                PROVIDE (__bss_end, .)
+                0x00006efe                __data_load_start = LOADADDR (.data)
+                0x000070be                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080023e        0x0
-                0x0080023e                PROVIDE (__noinit_start, .)
+.noinit         0x00800248        0x0
+                0x00800248                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0080023e                PROVIDE (__noinit_end, .)
-                0x0080023e                _end = .
-                0x0080023e                PROVIDE (__heap_start, .)
+                0x00800248                PROVIDE (__noinit_end, .)
+                0x00800248                _end = .
+                0x00800248                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -805,7 +805,7 @@ LOAD d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x7c14
+.stab           0x00000000     0x7ca4
  *(.stab)
  .stab          0x00000000      0x2b8 ./MCAL/UART/UART.o
  .stab          0x000002b8     0x1524 ./MCAL/Timer 1/Timer1.o
@@ -830,16 +830,16 @@ LOAD d:/interface/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\lib
                                 0x648 (size before relaxing)
  .stab          0x00005c7c      0x360 ./HAL/Buzzer/Buzzer.o
                                 0x4f8 (size before relaxing)
- .stab          0x00005fdc      0x9b4 ./Application/Control_Car/Control_car.o
-                                0xb4c (size before relaxing)
- .stab          0x00006990     0x105c ./Application/Autonomous_Car/Autonomous_Car.o
+ .stab          0x00005fdc      0xa74 ./Application/Control_Car/Control_car.o
+                                0xc0c (size before relaxing)
+ .stab          0x00006a50     0x105c ./Application/Autonomous_Car/Autonomous_Car.o
                                0x11f4 (size before relaxing)
- .stab          0x000079ec      0x228 ./Application/main.o
-                                0x51c (size before relaxing)
+ .stab          0x00007aac      0x1f8 ./Application/main.o
+                                0x4ec (size before relaxing)
 
-.stabstr        0x00000000     0x34c9
+.stabstr        0x00000000     0x34cd
  *(.stabstr)
- .stabstr       0x00000000     0x34c9 ./MCAL/UART/UART.o
+ .stabstr       0x00000000     0x34cd ./MCAL/UART/UART.o
 
 .stab.excl
  *(.stab.excl)

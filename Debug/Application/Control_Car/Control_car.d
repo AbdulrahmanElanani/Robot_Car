@@ -1,6 +1,6 @@
-Application/Control_Car/Control_Car.o \
-  Application/Control_Car/Control_Car.o:  \
- ../Application/Control_Car/Control_Car.c \
+Application/Control_Car/Control_car.o \
+  Application/Control_Car/Control_car.o:  \
+ ../Application/Control_Car/Control_car.c \
   ../Application/Control_Car/Control_Car.h \
   ../Application/Control_Car/../../MCAL/UART/UART.h \
   ../Application/Control_Car/../../MCAL/UART/../../Commons/MCU.h \

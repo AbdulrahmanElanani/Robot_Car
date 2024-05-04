@@ -25,8 +25,8 @@ void APP_Control_Car_Init(void) {
 void APP_Control_Car_App(void) {
 
 	u8 Loc_u8state = 0;
-	u8 Loc_u8Event = 'N';
-	f32 Loc_f32distance = 0;
+	u8 Loc_u8Event = 'S';
+	f32 Loc_f32distance = 70;
 	//	Initially Set Servo Angle 90
 	HAL_SM_voidSMSetAngle(START_ANGLE);
 	//Light Front LEDS
@@ -36,68 +36,69 @@ void APP_Control_Car_App(void) {
 		if (Loc_u8Event == 'F') {
 			HAL_LED_u8LedMode(PortA,Pin0,LED_ON);
 			HAL_LED_u8LedMode(PortA,Pin1,LED_OFF);
-			//Loc_u8state = 1;
-			//HAL_Ultrasonic_Sensor_voidCalcDistancse(&Loc_f32distance);
-			//_delay_ms(50);
-			//if (Loc_f32distance > 30) {
-				//HAL_LCD_u8Clear();
-			//	HAL_LCD_u8SendString("Moving Front...");
-				//HAL_LCD_u8GoTo(Second_Line, NUM0);
-				//HAL_LCD_u8SendString("Distance: ");
-				//_delay_ms(50);
+			Loc_u8state = 1;
+			HAL_Ultrasonic_Sensor_voidCalcDistancse(&Loc_f32distance);
+			_delay_ms(50);
+			if (Loc_f32distance > 30) {
+				HAL_LCD_u8Clear();
+				HAL_LCD_u8SendString("Moving Front...");
+				HAL_LCD_u8GoTo(Second_Line, NUM0);
+				HAL_LCD_u8SendString("Distance: ");
+				_delay_ms(50);
 				HAL_void_H_BridgeFront(MAX_SPEED);
-//			} else if (Loc_f32distance <= 30) {
-//				HAL_void_H_BridgeStop(NUM0);
-//			}
-			//else {
-			//NOTHING
-			//}
+			} else if (Loc_f32distance <= 30) {
+				HAL_void_H_BridgeStop(NUM0);
+			}
+			else {
+//			NOTHING
+			}
 		} else if (Loc_u8Event == 'B') {
-			//Loc_u8state = 1;
-			//HAL_LCD_u8Clear();
-			//HAL_LCD_u8SendString("Moving Back...");
+			Loc_u8state = 1;
+			HAL_LCD_u8Clear();
+			HAL_LCD_u8SendString("Moving Back...");
 			HAL_void_H_BridgeBack(MAX_SPEED);
 			HAL_LED_u8LedMode(PortA,Pin1,LED_ON);
-			//_delay_ms(1000);
+			_delay_ms(1000);
 		} else if (Loc_u8Event == 'L') {
-			//Loc_u8state = 0;
-		//	HAL_LCD_u8Clear();
-			//HAL_LCD_u8SendString("Moving Left...");
+			Loc_u8state = 0;
+				HAL_LCD_u8Clear();
+			HAL_LCD_u8SendString("Moving Left...");
 			HAL_void_H_BridgeCCW(MAX_SPEED);
-			//_delay_ms(900);
+			_delay_ms(900);
 
 		} else if (Loc_u8Event == 'R') {
-			//Loc_u8state = 0;
-			//HAL_LCD_u8Clear();
-			//HAL_LCD_u8SendString("Moving Right...");
+			Loc_u8state = 0;
+			HAL_LCD_u8Clear();
+			HAL_LCD_u8SendString("Moving Right...");
 			HAL_void_H_BridgeCW(MAX_SPEED);
-			//_delay_ms(900);
+			_delay_ms(900);
 
 		} else if (Loc_u8Event == 'S') {
-			//HAL_LCD_u8Clear();
-			//HAL_LCD_u8SendString("Stoped...");
+			HAL_LCD_u8Clear();
+			HAL_LCD_u8SendString("Stoped...");
 			HAL_void_H_BridgeStop(NUM0);
-//			if (Loc_u8state == 0) {
-//				Loc_u8state = 1;
-//				HAL_Ultrasonic_Sensor_voidCalcDistancse(&Loc_f32distance);
-//				if (Loc_f32distance > 30) {
-//					HAL_LCD_u8Clear();
-//					HAL_LCD_u8SendString("Moving Front...");
-//					HAL_LCD_u8GoTo(Second_Line, NUM0);
-//					HAL_LCD_u8SendString("Distance: ");
-//					_delay_ms(50);
-//					HAL_void_H_BridgeFront(MAX_SPEED);
-//				} else if (Loc_f32distance <= 30) {
-//					HAL_void_H_BridgeStop(NUM0);
-//				} else {
-//					//NOTHING
-//				}
-//			} else if (Loc_u8state == 1) {
-//				Loc_u8state = 0;
-//				HAL_void_H_BridgeStop(NUM0);
-//			} else {
-//				//NOTHING
-//			}
+			_delay_ms(900);
+			if (Loc_u8state == 0) {
+				Loc_u8state = 1;
+				HAL_Ultrasonic_Sensor_voidCalcDistancse(&Loc_f32distance);
+				if (Loc_f32distance > 30) {
+					HAL_LCD_u8Clear();
+					HAL_LCD_u8SendString("Moving Front...");
+					HAL_LCD_u8GoTo(Second_Line, NUM0);
+					HAL_LCD_u8SendString("Distance: ");
+					_delay_ms(50);
+					HAL_void_H_BridgeFront(MAX_SPEED);
+				} else if (Loc_f32distance <= 30) {
+					HAL_void_H_BridgeStop(NUM0);
+				} else {
+					//NOTHING
+				}
+			} else if (Loc_u8state == 1) {
+				Loc_u8state = 0;
+				HAL_void_H_BridgeStop(NUM0);
+			} else {
+				//NOTHING
+			}
 
 		} else if (Loc_u8Event == 'W') {
 			HAL_LED_u8LedMode(PortA, PIN0, LED_ON);
