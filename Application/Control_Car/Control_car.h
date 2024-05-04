@@ -22,6 +22,6 @@
 #define DISTANCE_10 10.0
 #define MAX_SPEED 99
 #define NUM_2 2
-void Control_Car_Init(void) ;
-void Control_Car_App(void) ;
+void APP_Control_Car_Init(void) ;
+void APP_Control_Car_App(void) ;
 #endif /* APPLICATION_CONTROL_CAR_CONTROL_CAR_H_ */

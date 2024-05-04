@@ -29,7 +29,7 @@ Application/main.o Application/main.o: ../Application/main.c \
   ../Application/Autonomous_Car/../../HAL/LCD/../../MCAL/DIO/DIO.h \
   ../Application/Autonomous_Car/../../HAL/Buzzer/Buzzer.h \
   ../Application/Autonomous_Car/../../HAL/Buzzer/../../MCAL/DIO/DIO.h \
-  ../Application/Autonomous_Car/../Control_Car/Control_car.h \
+  ../Application/Autonomous_Car/../Control_Car/Control_Car.h \
   ../Application/Autonomous_Car/../Control_Car/../../MCAL/UART/UART.h \
   ../Application/Autonomous_Car/../Control_Car/../../MCAL/UART/../../Commons/MCU.h \
   ../Application/Autonomous_Car/../Control_Car/../../MCAL/UART/../../Commons/Macros.h \
@@ -41,7 +41,7 @@ Application/main.o Application/main.o: ../Application/main.c \
   ../Application/Autonomous_Car/../Control_Car/../../HAL/LCD/LCD.h \
   ../Application/Autonomous_Car/../Control_Car/../../HAL/Buzzer/Buzzer.h \
   ../Application/Autonomous_Car/../Control_Car/../Autonomous_Car/Autonomous_Car.h \
-  ../Application/Control_Car/Control_car.h
+  ../Application/Control_Car/Control_Car.h
 
 ../Application/Autonomous_Car/Autonomous_Car.h:
 
@@ -103,7 +103,7 @@ Application/main.o Application/main.o: ../Application/main.c \
 
 ../Application/Autonomous_Car/../../HAL/Buzzer/../../MCAL/DIO/DIO.h:
 
-../Application/Autonomous_Car/../Control_Car/Control_car.h:
+../Application/Autonomous_Car/../Control_Car/Control_Car.h:
 
 ../Application/Autonomous_Car/../Control_Car/../../MCAL/UART/UART.h:
 
@@ -127,4 +127,4 @@ Application/main.o Application/main.o: ../Application/main.c \
 
 ../Application/Autonomous_Car/../Control_Car/../Autonomous_Car/Autonomous_Car.h:
 
-../Application/Control_Car/Control_car.h:
+../Application/Control_Car/Control_Car.h:

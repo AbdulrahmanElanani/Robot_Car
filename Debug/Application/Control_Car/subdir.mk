@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Application/Control_Car/Control_car.c 
+../Application/Control_Car/Control_Car.c 
 
 OBJS += \
-./Application/Control_Car/Control_car.o 
+./Application/Control_Car/Control_Car.o 
 
 C_DEPS += \
-./Application/Control_Car/Control_car.d 
+./Application/Control_Car/Control_Car.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

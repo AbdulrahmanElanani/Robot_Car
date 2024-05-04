@@ -1,7 +1,7 @@
-Application/Control_Car/Control_car.o \
-  Application/Control_Car/Control_car.o:  \
- ../Application/Control_Car/Control_car.c \
-  ../Application/Control_Car/Control_car.h \
+Application/Control_Car/Control_Car.o \
+  Application/Control_Car/Control_Car.o:  \
+ ../Application/Control_Car/Control_Car.c \
+  ../Application/Control_Car/Control_Car.h \
   ../Application/Control_Car/../../MCAL/UART/UART.h \
   ../Application/Control_Car/../../MCAL/UART/../../Commons/MCU.h \
   ../Application/Control_Car/../../MCAL/UART/../../Commons/STD_Types.h \
@@ -42,9 +42,9 @@ Application/Control_Car/Control_car.o \
   ../Application/Control_Car/../Autonomous_Car/../../HAL/LED/LED.h \
   ../Application/Control_Car/../Autonomous_Car/../../HAL/LCD/LCD.h \
   ../Application/Control_Car/../Autonomous_Car/../../HAL/Buzzer/Buzzer.h \
-  ../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_car.h
+  ../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_Car.h
 
-../Application/Control_Car/Control_car.h:
+../Application/Control_Car/Control_Car.h:
 
 ../Application/Control_Car/../../MCAL/UART/UART.h:
 
@@ -126,4 +126,4 @@ Application/Control_Car/Control_car.o \
 
 ../Application/Control_Car/../Autonomous_Car/../../HAL/Buzzer/Buzzer.h:
 
-../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_car.h:
+../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_Car.h:

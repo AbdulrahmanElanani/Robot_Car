@@ -13,7 +13,7 @@
 #include "../../HAL/LED/LED.h"
 #include "../../HAL/LCD/LCD.h"
 #include "../../HAL/Buzzer/Buzzer.h"
-#include "../Control_Car/Control_car.h"
+#include "../Control_Car/Control_Car.h"
 #define START_ANGLE 90
 #define MAX_CW_ANGLE 180
 #define MAX_CCW_ANGLE 0

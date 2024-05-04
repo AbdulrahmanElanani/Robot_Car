@@ -33,8 +33,8 @@ void APP_Autonomous_Car_voidApp(void) {
 	HAL_LED_u8LedMode(PortA, Pin0, LED_ON);
 	while (NUM1) {
 		MCAL_UART_UARTReceive(Loc_u8direction);
-		if(Loc_u8direction=='Q'){
-			Control_Car_App();
+		if(Loc_u8direction=='x'){
+			APP_Control_Car_App();
 		}
 		_delay_ms(50);
 		HAL_Ultrasonic_Sensor_voidCalcDistancse(&LOC_f32Distance);
