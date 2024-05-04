@@ -42,7 +42,16 @@ Application/Autonomous_Car/Autonomous_Car.o \
   ../Application/Autonomous_Car/../Control_Car/../../HAL/LED/LED.h \
   ../Application/Autonomous_Car/../Control_Car/../../HAL/LCD/LCD.h \
   ../Application/Autonomous_Car/../Control_Car/../../HAL/Buzzer/Buzzer.h \
-  ../Application/Autonomous_Car/../Control_Car/../Autonomous_Car/Autonomous_Car.h
+  ../Application/Autonomous_Car/../Control_Car/../Autonomous_Car/Autonomous_Car.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/FreeRTOS.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/FreeRTOSConfig.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/projdefs.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/portable.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/deprecated_definitions.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/portmacro.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/mpu_wrappers.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/task.h \
+  ../Application/Autonomous_Car/../Control_Car/../../FreeRtos/list.h
 
 ../Application/Autonomous_Car/Autonomous_Car.h:
 
@@ -127,3 +136,21 @@ Application/Autonomous_Car/Autonomous_Car.o \
 ../Application/Autonomous_Car/../Control_Car/../../HAL/Buzzer/Buzzer.h:
 
 ../Application/Autonomous_Car/../Control_Car/../Autonomous_Car/Autonomous_Car.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/FreeRTOS.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/FreeRTOSConfig.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/projdefs.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/portable.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/deprecated_definitions.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/portmacro.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/mpu_wrappers.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/task.h:
+
+../Application/Autonomous_Car/../Control_Car/../../FreeRtos/list.h:
