@@ -17,5 +17,6 @@ void HAL_void_H_BridgeCCW(u8);
 void HAL_void_H_BridgeStop(u8);
 void HAL_void_H_BridgeFront(u8);
 void HAL_void_H_BridgeBack(u8);
+void HAL_void_H_BridgeFR();
 
 #endif /* HAL_H_BRIDGE_H_BRIDGE_H_ */

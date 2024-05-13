@@ -42,16 +42,7 @@ Application/Control_Car/Control_car.o \
   ../Application/Control_Car/../Autonomous_Car/../../HAL/LED/LED.h \
   ../Application/Control_Car/../Autonomous_Car/../../HAL/LCD/LCD.h \
   ../Application/Control_Car/../Autonomous_Car/../../HAL/Buzzer/Buzzer.h \
-  ../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_Car.h \
-  ../Application/Control_Car/../../FreeRtos/FreeRTOS.h \
-  ../Application/Control_Car/../../FreeRtos/FreeRTOSConfig.h \
-  ../Application/Control_Car/../../FreeRtos/projdefs.h \
-  ../Application/Control_Car/../../FreeRtos/portable.h \
-  ../Application/Control_Car/../../FreeRtos/deprecated_definitions.h \
-  ../Application/Control_Car/../../FreeRtos/portmacro.h \
-  ../Application/Control_Car/../../FreeRtos/mpu_wrappers.h \
-  ../Application/Control_Car/../../FreeRtos/task.h \
-  ../Application/Control_Car/../../FreeRtos/list.h
+  ../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_Car.h
 
 ../Application/Control_Car/Control_Car.h:
 
@@ -136,21 +127,3 @@ Application/Control_Car/Control_car.o \
 ../Application/Control_Car/../Autonomous_Car/../../HAL/Buzzer/Buzzer.h:
 
 ../Application/Control_Car/../Autonomous_Car/../Control_Car/Control_Car.h:
-
-../Application/Control_Car/../../FreeRtos/FreeRTOS.h:
-
-../Application/Control_Car/../../FreeRtos/FreeRTOSConfig.h:
-
-../Application/Control_Car/../../FreeRtos/projdefs.h:
-
-../Application/Control_Car/../../FreeRtos/portable.h:
-
-../Application/Control_Car/../../FreeRtos/deprecated_definitions.h:
-
-../Application/Control_Car/../../FreeRtos/portmacro.h:
-
-../Application/Control_Car/../../FreeRtos/mpu_wrappers.h:
-
-../Application/Control_Car/../../FreeRtos/task.h:
-
-../Application/Control_Car/../../FreeRtos/list.h:

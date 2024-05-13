@@ -23,7 +23,6 @@ SUBDIRS := \
 Application/Autonomous_Car \
 Application/Control_Car \
 Application \
-FreeRtos \
 HAL/Buzzer \
 HAL/H_Bridge \
 HAL/IR_Sensor \

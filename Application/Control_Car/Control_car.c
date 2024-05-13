@@ -7,8 +7,8 @@
 #include "Control_Car.h"
 f32 Glob_f32distance = 0;
 u8 Glob_u8Event = 'S';
-void sensor(void *pt) ;
-void lcd_display(void *ptr) ;
+void sensor(void *pt);
+void lcd_display(void *ptr);
 void APP_Control_Car_Init(void) {
 	//Init Buzzer
 	HAL_Buzzer_u8BuzzerInit(PortA, Pin3);
@@ -26,9 +26,9 @@ void APP_Control_Car_Init(void) {
 	//UART
 	MCAL_UART_UARTInit();
 	//Free Rtos
-	xTaskCreate(lcd_display, "lcd_display", 80, 0, 1, 0);
-	xTaskCreate(sensor, "sensor", 80, 0, 1, 0);
-	vTaskStartScheduler();
+//	xTaskCreate(lcd_display, "lcd_display", 80, 0, 1, 0);
+//	xTaskCreate(sensor, "sensor", 80, 0, 1, 0);
+//	vTaskStartScheduler();
 }
 void APP_Control_Car_App(void) {
 
@@ -39,13 +39,13 @@ void APP_Control_Car_App(void) {
 	while (1) {
 		MCAL_UART_UARTReceive(&Glob_u8Event);
 		if (Glob_u8Event == 'F') {
-			if(Glob_f32distance>30){
+			//if(Glob_f32distance>30){
 			HAL_LED_u8LedMode(PortA, Pin0, LED_ON);
 			HAL_LED_u8LedMode(PortA, Pin1, LED_OFF);
 			HAL_void_H_BridgeFront(MAX_SPEED);
-			}else{
-				HAL_void_H_BridgeStop(NUM0);
-			}
+			//}else{
+			//HAL_void_H_BridgeStop(NUM0);
+			//}
 		} else if (Glob_u8Event == 'B') {
 			HAL_void_H_BridgeBack(MAX_SPEED);
 			HAL_LED_u8LedMode(PortA, Pin1, LED_ON);
@@ -69,6 +69,15 @@ void APP_Control_Car_App(void) {
 			HAL_Buzzer_u8BuzzerMode(PortA, Pin3, Buzzer_OFF);
 		} else if (Glob_u8Event == 'X') {
 			APP_Autonomous_Car_voidApp();
+		} else if (Glob_u8Event == 'G') {
+			HAL_void_H_BridgeFR();
+		} else if (Glob_u8Event == 'I') {
+//			HAL_void_H_BridgeCW(99);
+//			HAL_void_H_BridgeCCW(60);
+		} else if (Glob_u8Event == 'H') {
+
+		} else if (Glob_u8Event == 'J') {
+
 		} else {
 			//NOTHING
 		}
@@ -79,11 +88,11 @@ void lcd_display(void *ptr) {
 	while (1) {
 		switch (Glob_u8Event) {
 		case 'F':
-			if(Glob_f32distance>30){
-			HAL_LCD_u8Clear();
-			HAL_LCD_u8SendString("Moving Front: ");
-			_delay_ms(500);
-			}else{
+			if (Glob_f32distance > 30) {
+				HAL_LCD_u8Clear();
+				HAL_LCD_u8SendString("Moving Front: ");
+				_delay_ms(500);
+			} else {
 				HAL_LCD_u8Clear();
 				HAL_LCD_u8SendString("Stopping!!");
 				_delay_ms(500);

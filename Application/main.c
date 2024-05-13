@@ -9,7 +9,7 @@
 #include "Control_Car/Control_Car.h"
 int main(void) {
 	u8 Loc_u8Mode = 'X';
-	APP_Autonomous_Car_voidInit();
+	//APP_Autonomous_Car_voidInit();
 	APP_Control_Car_Init();
 	while (1) {
 		//MCAL_UART_UARTReceive(&Loc_u8Mode);
